@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.line {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 90%;
+    z-index: 999;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: running;
+    animation-duration: 30s;
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    align-items: center;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+@keyframes running {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
