@@ -11,6 +11,10 @@
     box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
 }
 
+.wrapper .task:not(:first-child) {
+    margin-bottom: 32px;
+}
+
 .wrapper .task::before {
     display: none;
 }
@@ -55,12 +59,26 @@
     text-decoration: line-through;
 }
 
+.day {
+    margin: 0 0 20px 15px;
+}
+
+.day span {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.day_icon {
+    vertical-align: middle;
+}
+
 .task_title span,
 .day_title {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     color: #f4f4f4;
+    margin-bottom: 0;
 }
 
 .day_title div {
